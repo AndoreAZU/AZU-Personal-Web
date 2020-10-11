@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andreas Syahputra</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparant fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="http://placehold.it/150x50?text=Logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Profile -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <div class="div-profile">
+            <img src="./img/profile.jpg" width="100" height="90" style="border-radius: 50%;">
+          </div>
+          <h1 class="font-weight-light" style="font-family: sign;font-weight: 900;">Hey! Iam Andreas Syahputra</h1>
+          <p class="lead">IT Specialist</p>
+          <div class="text-skill"></div>
+          <ul class="nav-sosmed">
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#" onclick="clicksosmed('facebook')" data-toggle="modal" data-target="#myModal">
+                  <img src="./img/facebook.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/twitter.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/instagram.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/linkedin.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Skill Board -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="container text-left">
+          <h1 class="font-weight-light">I Got Skills</h1>
+          <p class="lead">I am passionate about combining function, interaction and form to design for fitting user
+            experiences that make people happy. I have a passion for creating challenging, intuitive and beautiful
+            products. My design process is very hands-on and visual.</p>
+          <div>
+            <div class="bd-example">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div style="text-align: center;">
+                      <h5>Gambar Slide Yang Pertama</h5>
+                    </div>
+                    <div class="skill-bar container">
+                      <div style="display: block; width: inherit;">
+                        <span style="font-size: 30;">Progress Bar</span>
+                        <h5 style="float: right;">andreas</h5>
+                      </div>
+                      <div class="progress" style="background-color: black; width: 100%;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width:70%">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-bar">
+                      <div style="display: block; width: inherit;">
+                        <span style="font-size: 30;">Progress Bar</span>
+                        <h5 style="float: right;">andreas</h5>
+                      </div>
+                      <div class="progress" style="background-color: black; width: 100%;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width:70%">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <div class="skill-bar">
+                      <div style="text-align: center;">
+                        <h5>Gambar Slide Yang Pertama</h5>  
+                      </div>
+                      <div style="display: block; width: inherit;">
+                        <span style="font-size: 30;">Progress Bar</span>
+                        <h5 style="float: right;">andreas</h5>
+                      </div>
+                      <div class="progress" style="background-color: black; width: 100%;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width:70%">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-bar">
+                      <div style="display: block; width: inherit;">
+                        <span style="font-size: 30;">Progress Bar</span>
+                        <h5 style="float: right;">andreas</h5>
+                      </div>
+                      <div class="progress" style="background-color: black; width: 100%;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width:70%">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+                </ol>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Study -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <div class="div-profile">
+            <img src="./img/profile.jpg" width="100" height="90" style="border-radius: 50%;">
+          </div>
+          <h1 class="font-weight-light" style="font-family: sign;font-weight: 900;">Hey! Iam Andreas Syahputra</h1>
+          <p class="lead">IT Specialist</p>
+          <div class="text-skill"></div>
+          <ul class="nav-sosmed">
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#" onclick="clicksosmed('facebook')" data-toggle="modal" data-target="#myModal">
+                  <img src="./img/facebook.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/twitter.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/instagram.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item list-sosmed">
+              <div class="img-sosmed">
+                <a href="#">
+                  <img src="./img/linkedin.png" width="20" height="20">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  var text = document.getElementsByClassName('text-skill')[0];
+  var modal = document.getElementById("myModal");
+  var data_text = ["Java Programming", "It Maniac !"];
+  var flag_data = 0;
+  var flag_index = 0;
+  var flag_waiting = 0;
+
+  var url_instagram = "https://www.instagram.com/andreassyp/";
+  var url_facebook = "https://www.facebook.com/andreas.syahputra.1/";
+  var url_twitter = "https://twitter.com/andore_ASU";
+  var url_linked = "https://www.linkedin.com/in/andreas-syahputra-98b0a515b/";
+
+  typewriter();
+
+  function typewriter() {
+    if (flag_data < data_text.length) {
+      text.innerHTML += data_text[flag_data].charAt(flag_index);
+      flag_index++;
+    }
+    if (flag_index > data_text[flag_data].length) {
+      flag_index = 0; flag_data++;
+      waiting();
+    } else {
+      setTimeout(typewriter, 50);
+    }
+    if (flag_data == data_text.length) {
+      flag_data = 0;
+    }
+  }
+
+  function clicksosmed(sosmed) {
+    if (sosmed.localeCompare("facebook") == 0) {
+      modal.display = "block";
+    }
+  }
+
+  document.getElementsByClassName("close")[0].onclick = function () {
+    modal.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.display = "none";
+    }
+  }
+
+  function waiting() {
+    if (text.innerHTML.slice(-1) == '.') {
+      // text.innerHTML = text.innerHTML.slice(0, -1);
+      text.innerHTML += '.'
+      flag_waiting++;
+    } else text.innerHTML += '.';
+
+    if (flag_waiting > 3) {
+      flag_waiting = 0;
+      text.innerHTML = "";
+      typewriter();
+    }
+    else setTimeout(waiting, 500);
+  }
+
+
+</script>
+
+</html>

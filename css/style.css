@@ -1,0 +1,87 @@
+@font-face {
+    font-family: robot;
+    src: url(../font/robot-font.ttf);
+}
+
+@font-face {
+    font-family: sign;
+    src: url(../font/hard-sign.ttf);
+}
+
+.logo-brand {
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+}
+
+.div-profile {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-sosmed {
+    display: inline-flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+    width: inherit;
+}
+
+.img-sosmed {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+.img-sosmed:hover {
+    background-color: white;
+}
+
+.list-sosmed {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.text-skill {
+    font-family: robot;
+    font-size: 2em;
+}
+
+.skill-bar{
+    width: 70%;
+}
+
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+    top: 20px;
+    position: relative;
+}
+
+.carousel-indicators li{
+    background-color: black;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: red;
+}
